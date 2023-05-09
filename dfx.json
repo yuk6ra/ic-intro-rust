@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "gm_world_backend": {
+      "candid": "src/gm_world_backend/gm_world_backend.did",
+      "package": "gm_world_backend",
+      "type": "rust"
+    },
+    "gm_world_frontend": {
+      "dependencies": [
+        "gm_world_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/gm_world_frontend/src/index.html"
+      },
+      "source": [
+        "src/gm_world_frontend/assets",
+        "dist/gm_world_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

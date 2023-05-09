@@ -1,0 +1,4 @@
+[workspace]
+members = [
+    "src/gm_world_backend",
+]
